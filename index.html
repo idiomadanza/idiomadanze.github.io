@@ -13,7 +13,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -58,24 +60,12 @@
         </div>
       </div>
 
-      <div class="subscribe">
-        <h4>Bleibe auf dem laufenden!</h4>
-        <form action="forms/notify.php" method="post" role="form" class="php-email-form">
-          <div class="subscribe-form">
-            <input type="email" name="email" required><input type="submit" value="Subscribe">
-          </div>
-          <div class="mt-2">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your notification request was sent. Thank you!</div>
-          </div>
-        </form>
-      </div>
-
       <div class="social-links text-center">
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="whatsapp"><i class="bi bi-phone"></i></a>
+        <a aria-label="Chat on WhatsApp"
+          href="https://wa.me/+4915678659226?text=Hallo%20Patricia%20und%20Stephan,%20ich%20habe%20weitere%20Fragen%20zu%20..."
+          target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/idiomadanza/" class="instagram"
+          aria-label="Learn more of us from our Instagram profile." target="_blank"><i class="bi bi-instagram"></i></a>
       </div>
 
     </div>
@@ -83,35 +73,6 @@
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About Us</h2>
-          <p>Illo velit quae dolorem voluptate pireda notila set. Corrupti voluptatum tempora iste ratione deleniti corrupti nostrum ut</p>
-        </div>
-
-        <div class="row mt-2">
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
 
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact">
@@ -134,7 +95,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@idiomadanza.de</p>
+                <p>mail@idiomadanza.de</p>
               </div>
 
               <div class="phone">
@@ -148,24 +109,17 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form name="contact" method="post" role="form" class="php-email-form" data-netlify="true">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Dein Name" required>
                 </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Deine Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Nachricht" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -185,7 +139,11 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+
     <div class="container">
+      <div class="copyright">
+        <a href="vereinssatzung.html" class="datenschutzerklaerung">Vereinssatzung</a>
+      </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Maundy</span></strong>. All Rights Reserved
       </div>
@@ -199,7 +157,8 @@
     </div>
   </footer><!-- End #footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
