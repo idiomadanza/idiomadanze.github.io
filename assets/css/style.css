@@ -574,7 +574,7 @@ div#preloader {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
 }
 
 #hero .carousel-container {
@@ -628,7 +628,7 @@ div#preloader {
 }
 
 #hero .carousel-fade {
-  overflow: hidden;
+ overflow: hidden;
 }
 
 #hero .carousel-fade .carousel-inner .carousel-item {
